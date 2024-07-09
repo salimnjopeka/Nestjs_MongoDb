@@ -6,6 +6,7 @@ import { PersonsModule } from './persons/persons.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ProductModule } from './product/product.module';
 import { CategoryModule } from './category/category.module';
+import { PostModule } from './post/post.module';
 
 @Module({
   imports: [ConfigModule.forRoot({
@@ -21,6 +22,7 @@ import { CategoryModule } from './category/category.module';
      PersonsModule,
      ProductModule,
      CategoryModule,
+     PostModule,
     ],
 })
 export class AppModule {}
